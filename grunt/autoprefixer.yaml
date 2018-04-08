@@ -1,0 +1,3 @@
+cv:
+  src: dist/style.css
+  dest: dist/style.css

@@ -1,0 +1,43 @@
+mixin skill(name, level)
+    .skill
+        .skill-name=name
+        .skill-gauge(class="skill-gauge-" + level)
+            for i in [1, 2, 3, 4, 5]
+                .skill-dot(class=level >= i ? "skill-active" : "")
+.section#skills
+    .section-title Compétences
+    .separator
+    .lefted-block
+        .lefted-block-title Mobile
+        .lefted-block-block
+            .skills
+                +skill('Android', 5)
+                +skill('Xamarin', 4)
+                +skill('iOS', 2)
+                +skill('Cordova', 4)
+    .lefted-block
+        .lefted-block-title Web
+        .lefted-block-block
+            .skills
+                +skill('JavaScript', 5)
+                +skill('TypeScript', 4)
+                +skill('HTML5', 4)
+                +skill('CSS3', 4)
+                +skill('Angular', 2)
+    .lefted-block
+        .lefted-block-title Tests
+        .lefted-block-block
+            .skills
+                +skill('Espresso', 3)
+                +skill('JUnit', 3)
+                +skill('Mocha', 3)
+                +skill('NodeUnit', 3)
+    .lefted-block
+        .lefted-block-title Autres
+        .lefted-block-block
+            .skills
+                +skill('Git', 4)
+                +skill('Firebase', 4)
+                +skill('GCP', 2)
+                +skill('Node.js', 4)
+                +skill('Express', 4)

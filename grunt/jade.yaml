@@ -1,0 +1,3 @@
+cv:
+  src: src/jade-jimmy/index.jade
+  dest: dist/index.html

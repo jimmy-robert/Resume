@@ -1,0 +1,3 @@
+cv:
+  src: src/stylus/main.styl
+  dest: dist/style.css

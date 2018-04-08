@@ -1,0 +1,189 @@
+$blue = rgb(0, 155, 201)
+//$blue = #4CAF50
+//$blue = #B71C1C
+$dark = rgb(64, 64, 64)
+$light = rgb(181, 181, 181)
+
+$space = 8px
+
+*
+  position relative
+
+body
+  color $dark
+  font-family Roboto, sans-serif
+
+.separator
+  height 2px
+  background-color $light
+  margin-bottom $space
+  &.blue
+    background-color $blue
+  &.big
+    height $space
+
+#header
+  display flex
+
+#picture
+  width 120px
+  height 150px
+  background-image url('img/picture2.jpg')
+  background-position center
+  background-size cover
+
+  #ophelie &
+    display none
+
+#info
+  flex 1
+  margin-left 2 *$space
+
+  #ophelie &
+    margin-left 0
+
+#name
+  text-transform uppercase
+  font-size 20px
+  font-weight 500
+  margin-bottom $space
+
+#job-description
+  font-size 16px
+  color $blue
+  margin-bottom 1.5 * $space
+
+#table
+  width 100%
+  font-size 14px
+  .table-row
+    display flex
+    &:first-child
+      margin-bottom 1.5 * $space
+  .table-cell
+    padding 0
+    display flex
+    &:nth-child(1)
+      width 176px
+      #ophelie &
+        width 210px
+    &:nth-child(2)
+      width 210px
+
+  .icon
+    width 36px
+    height 36px
+    border-radius 50%
+    background-color $blue
+    margin-right $space
+    img
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      width 60%
+      height 60%
+  .detail
+    flex 1
+  .title
+    text-transform uppercase
+    color $light
+    margin-bottom 0.5 * $space
+    font-size 12px
+    padding-top 2px
+  .value
+    font-size 12px
+
+.section
+  margin-top 2 * $space
+.section-title
+  font-size 20px
+  font-weight 500
+  text-transform uppercase
+  margin-bottom 0.5 * $space
+.subsection
+  margin-top 12px
+  &:first-child
+    margin-top 16px
+.subsection-date
+  font-size 12px
+  color $light
+  text-transform uppercase
+  font-weight 500
+.subsection-title
+  font-size 14px
+  font-weight 500
+  margin-top 4px
+.subsection-description
+  margin-top 2px
+  font-size 14px
+.subsection-missions
+  padding-left 60px
+  .subsection
+    margin-top 6px
+.subsection-missions-title
+  color $blue
+  margin-top 6px
+
+.sites
+  display flex
+  margin-top 16px
+.site
+  display flex
+  margin-right 72px
+.site-icon
+  margin-right 16px
+  img
+    height 42px
+.site-detail
+  flex 1
+.site-name
+  font-weight 500
+  margin-bottom 4px
+.site-url
+  color $blue
+
+#jimmy #work
+  page-break-after always
+#npm-icon
+  height 36px
+  top 4px
+.lefted-block
+  font-size 14px
+  display flex
+  margin-top 16px
+.lefted-block-title
+  width 120px
+  color $blue
+.lefted-block-block
+  flex 1
+.skills
+  display flex
+  flex-wrap wrap
+.skill
+  margin-right 24px
+  margin-bottom 12px
+  width 82px
+.skill-name
+  margin-bottom 4px
+.skill-gauge
+  display flex
+.skill-dot
+  height 10px
+  width 10px
+  border-radius 50%
+  background-color $light
+  margin-right 4px
+.skill-active
+  background-color $blue
+
+#language
+  .subsection-title
+    margin-top 0
+    margin-bottom 8px
+  .subsection-date
+    margin-top 8px
+    &:first-child
+      margin-top 0
+
+#skills
+  padding-top 8px
